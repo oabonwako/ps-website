@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="img/logo.png" />
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <img src="img/logo.png" title="PlayStation" class="logo" />
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Exclusive Games</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" title="menu" class="menu-icon" onclick="toggle()"/>
+        </div>
+
+        <div id="row1">
+            <div id="box1">
+                <h2>PS4 V2<br>DualShock 4</h2>
+                <h3>Wireless Controller for PS4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>FREE $0.99</h4>
+                <button>Buy Me <img src="img/arrow.png" /></button>
+            </div>
+            <div id="box2">
+                <img src="img/controller.png" class="controller" />
+                <div id="color-box"></div>
+                <div id="add-btn">
+                    <img src="img/add.png"/>
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="social-links">
+            <img src="img/fb.png" />
+            <img src="img/ig.png" />
+            <img src="img/tw.png" />
+        </div>
+
+    </div>
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggle() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
